@@ -1,0 +1,141 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%; 
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/59ee2998710699464a5945a0/1600886813146-Q1TO5IZA7RWYKZNXRVN5/Cerro+La+Silla-61.jpg?format=1500w);  
+  }
+
+  h1{
+      text-align: center;
+  }
+  
+  
+  .contact_form {
+  background: rgba(0, 0, 0, .6);
+  width: 90%; 
+  max-width: 650px;
+  margin: auto;
+  padding: 5px 35px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  float: right;
+  height: ;
+
+
+}
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 9px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: left;
+    width: 122px;
+  }
+  
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #d8c2d3; 
+    border-color: #ab4493; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  button p{
+    color: rgb(63, 11, 11); 
+  }
+  
+  
+  span{
+    color: #ab4493; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+  
+  h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #185e29;
+  }
+  
+  
+  h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0f0b0b;   
+  }
+  
+  
+  p{
+    font-size: 14px; 
+    color: #141212; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #ad9b9b;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #2c4b06;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
