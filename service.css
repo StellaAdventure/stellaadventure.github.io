@@ -1,0 +1,225 @@
+/* ESTE ES EL CSS DE LA PARTE DE ACTIVIDADES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+    background: #fefefe;
+}
+
+header{
+  display: flex;
+  height: 70px;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo{
+  display: flex;
+}
+
+.logo img{
+  height: 60px;
+}
+
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 0.5s;
+}
+
+nav ul li::after{
+ content: ''; 
+ background: #729B26;
+ width: 100%;
+ height: 40px;
+ border-radius: 30px;
+ position: absolute;
+ top: 100px;
+ left: 65px;
+ transform: translate(-50%, -50%);
+ z-index: -1;
+ opacity: 0;
+ transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover{
+  color: #fff;
+}
+
+nav ul li:hover::after{
+  top: 50%;
+  opacity: 1;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    margin: auto;
+}
+.box{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    border:0px solid #fff;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+p{
+    text-align: center;
+    display: flex;
+    justify-content: top;
+    margin-top: 0px;
+    color: #EFB65C;
+}
+h1{
+    margin-top: 100px;
+    justify-content: center;
+    position: absolute;
+    color: #8F5B0A;
+    font-size: 500%;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    transform: scale(0);
+    transition: .3s ease;
+}
+.box:hover .capa{
+    transform: scale(1);
+}
+@media only screen and (max-width:900px){
+    .container{
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+}
+
+/* ESTE ES EL CSS DE LA PARTE DE LOS PAQUETES*/
+h2{
+    color: #8F5B0A;
+    font-size: 300%;
+}
+.contenedor{
+    width: 90%;
+    max-width:900px;
+    margin: auto;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tabla{
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border:1px solid #8F5B0A;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px  #8F5B0A;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: #8F5B0A;
+}
+
+.tabla>h2{
+    font-size:30px;
+    margin-bottom:35px;
+}
+
+.tabla img{
+    width: 64px;
+    margin-bottom:35px;
+}
+
+.tabla > h3{
+    font-size:30px;
+    margin-bottom: 20px;
+}
+
+.tabla > p{
+    display: block;
+    margin-bottom:20px;
+}
+
+.boton{
+    display:inline-block;
+    width: 150px;
+    padding:12px;
+    background: #EFB65C;
+    text-decoration: none;
+    color: #0a141d;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.tabla:hover{
+    background: #8F5B0A;
+    color: #f1f1f2;
+    transition: .5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    .tabla{
+        width: 45%;
+        max-width:none;
+        margin-bottom: 40px;
+        flex-grow: initial;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .tabla{
+        width: 45%;
+        padding:30px;
+    }
+    .tabla > h2{
+        margin-top:40px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .tabla{
+        width: 85%;
+        padding: 20px;
+    }
+}
+
